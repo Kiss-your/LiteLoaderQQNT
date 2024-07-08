@@ -255,15 +255,15 @@ async function initPath(view) {
 
 
 async function initAbout(view) {
-    const liteloaderqqnt = view.querySelector(".about .liteloaderqqnt");
-    const github = view.querySelector(".about .github");
-    const group = view.querySelector(".about .group");
-    const channel = view.querySelector(".about .channel");
+    // const liteloaderqqnt = view.querySelector(".about .liteloaderqqnt");
+    // const github = view.querySelector(".about .github");
+    // const group = view.querySelector(".about .group");
+    // const channel = view.querySelector(".about .channel");
 
-    liteloaderqqnt.addEventListener("click", () => LiteLoader.api.openExternal("https://liteloaderqqnt.github.io"));
-    github.addEventListener("click", () => LiteLoader.api.openExternal("https://github.com/LiteLoaderQQNT"));
-    group.addEventListener("click", () => LiteLoader.api.openExternal("https://t.me/LiteLoaderQQNT"));
-    channel.addEventListener("click", () => LiteLoader.api.openExternal("https://t.me/LiteLoaderQQNT_Channel"));
+    // liteloaderqqnt.addEventListener("click", () => LiteLoader.api.openExternal("https://liteloaderqqnt.github.io"));
+    // github.addEventListener("click", () => LiteLoader.api.openExternal("https://github.com/LiteLoaderQQNT"));
+    // group.addEventListener("click", () => LiteLoader.api.openExternal("https://t.me/LiteLoaderQQNT"));
+    // channel.addEventListener("click", () => LiteLoader.api.openExternal("https://t.me/LiteLoaderQQNT_Channel"));
 
     // Hitokoto - 一言
     const fetchHitokoto = async () => {
@@ -272,5 +272,5 @@ async function initAbout(view) {
         view.querySelector(".about .hitokoto_author").textContent = creator;
     };
     fetchHitokoto();
-    setInterval(fetchHitokoto, 1000 * 10);
+    // setInterval(fetchHitokoto, 1000 * 10);
 }
